@@ -1,6 +1,7 @@
 import { Link } from "next-view-transitions";
 import { getBlogPosts } from "~~/blog";
 import { NewsletterForm } from "~~/app/blog/newsletter-form";
+import Comments from "../components/comments";
 
 function UpRightArrowIcon() {
   return (
@@ -267,6 +268,7 @@ export default function HomePage() {
         <div className="space-y-6">
         <p className="font-medium">subscribe for updates. no spam.</p>
         <NewsletterForm />
+        <Comments />
         </div>
       </div>
     </main>
