@@ -1,11 +1,40 @@
 "use client";
+
 import type { SVGProps } from "react";
 import { useFormStatus } from "react-dom";
 import { subscribe } from "../blog/actions";
+import TurnstileWidget from './../../components/TurnstileWidget';
+import { useRef, useState } from "react";
 
 export function NewsletterForm() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [token, setToken] = useState<string | null>(null);
+
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (!token) {
+      console.error('Token not available');
+      return;
+    }
+
+    const response = await fetch('/api/verify-turnstile', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ token }),
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      console.log('Subscription successful');
+    } else {
+      console.log('Error:', data.error);
+    }
+  };
+
   return (
-    <form action={subscribe}>
+    <form ref={formRef} onSubmit={handleSubmit}>
       <div className="flex w-full gap-4">
         <div className="flex-grow">
           <input
@@ -18,7 +47,7 @@ export function NewsletterForm() {
         </div>
         <SubmitButton />
       </div>
-      <div></div>
+      <TurnstileWidget onToken={setToken} />
     </form>
   );
 }
