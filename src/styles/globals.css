@@ -4,7 +4,9 @@
 
 html {
   min-width: 360px;
+  background-color: #131313;
 }
+/* theme: vesper */
 
 @media (prefers-color-scheme: dark) {
   .shiki,

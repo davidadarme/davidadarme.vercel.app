@@ -82,7 +82,7 @@ async function Pre({
     const html = await codeToHtml(String(codeElement?.props.children).replace(/`/g, ''), {
       lang,
       themes: {
-        dark: "github-dark-default",
+        dark: "vitesse-black",
         // dark: [ "aurora-x", "houston"]
         light: "github-light-default",
       },
