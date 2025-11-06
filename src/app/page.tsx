@@ -298,7 +298,7 @@ const StudyItems = [
 
       <div className="mt-4 flex flex-col gap-6">
       <p className="prose prose-neutral max-w-3xl mb-10 dark:prose-invert">
-        Passionate about software development, DevOps, cloud infrastructure, backend engineering, databases, software architecture and system automation. I am currently focused on learning more about microservices, frameworks, best practices and building scalable systems to grow my skills as a backend developer. I have experience as a Software Developer (Backend mainly) working in both medical and financial domains. In the future, I aim to transition into a DevOps-focused role where I can contribute to building and maintaining reliable, automated, and efficient infrastructure.
+        Passionate about Software Engineering/Development/Architecture, DevOps/SRE/PE, Cloud Infrastructure, Database Administration and Systems Automation. I am also pursuing a Software Engineering degree and learning more about some topics focused in scalable systems, automation, and cloud technologies. Currently, I am expanding my expertise in microservices architecture, and conceptual technologies; always looking for new challenges and opportunities to grow in IT.
       </p>
 {/* 
         <div>

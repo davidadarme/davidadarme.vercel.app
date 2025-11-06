@@ -15,6 +15,12 @@ const config = {
   env: {
     NEXT_PUBLIC_CF_R2_BUCKET_URL: process.env.NEXT_PUBLIC_CF_R2_BUCKET_URL,
   },
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: `${process.env.NEXT_PUBLIC_CF_R2_BUCKET_URL}` },
+    ],
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 const sentryConfig = {

@@ -14,13 +14,13 @@ export default function HomePage() {
         <img
           alt="Memories"
           className="w-full h-auto rounded-lg shadow-lg"
-          src="https://r2.davidadarme.com/about/Alexandre_Cabanel_-_Fallen_Angel.jpg"
+          src="https://r2.davidadarme.com/about/about_Alexandre_Cabanel_-_Fallen_Angel.webp"
         />
 
         <div className="mt-4 flex flex-col gap-6">
 
           <p className="prose prose-neutral max-w-3xl dark:prose-invert">
-            I consider myself a person who likes to learn new things. I am passionate about Software Development-Architecture, DevOps, Cloud Infrastructure, Databases and Automation. I would like to explore and learn more about some topics focused in backend and infra. I'm also interested in pursuing a degree in Software Engineering later on. I have a strong interest in the world of technology, and I am always looking for new challenges and opportunities to grow in this field. 
+            I consider myself a person who likes to learn new things. I am passionate about Software Development-Architecture, DevOps/SRE/PE, Cloud Infrastructure, Databases and Automation. I would like to explore and learn more about some topics focused in backend and infra. I'm also interested in pursuing a degree in Software Engineering later on. I have a strong interest in the world of technology, and I am always looking for new challenges and opportunities to grow in this field. 
           </p>
 
           {/* <div className="dark:prose-invert">
@@ -41,8 +41,14 @@ export default function HomePage() {
           </h3>  */}
 
           <p className="prose prose-neutral max-w-3xl dark:prose-invert">
-            Outside of the software box, I like build LEGOs, collect hot wheels, hiking, farm, food, cooking, listen music, languages, watch movies, play guitar and learn to play piano, I love animals, especially cats (I'd like to found an animals foundation someday), architecture, art, photography and design (I am trying poetry). Also I like cars and motorcycles especially BMW S1000RR and Ducati Panigale V4S (Karl Marx failed to consider the sound a naturally aspirated V12 would make).
+            Outside of the software box, I like build LEGOs, collect hot wheels, hiking, farm, food, cooking, listen music, languages, watch movies, play guitar and learn to play piano, I love animals, especially cats (I'd like to found an animals foundation someday), architecture, art, photography, design and trying poetry. Also I like cars and motorcycles especially BMW S1000RR and Ducati Panigale V4S (Karl Marx failed to consider the sound a naturally aspirated V12 would make).
           </p>
+
+          <img
+            alt="Memories"
+            className="w-4/12 left"
+            src="https://r2.davidadarme.com/about/david_signature_reduced.png"
+          />
 
           {/* <div className="dark:prose-invert">
             <img
